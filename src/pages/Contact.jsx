@@ -11,7 +11,7 @@ const Contact = () => {
       </section>
 
       {/* Content Page */}
-      <section className="bg0 p-t-104 p-b-116">
+      <section className="bg0 p-t-104 ">
         <div className="container">
           <div className="flex-w flex-tr">
             {/* Form Section */}
@@ -85,6 +85,29 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      <div className="map" style={{ marginBottom: '150px', marginTop: '80px' }}>
+      <div
+        className="size-303  container-fluid col-lg-12 d-flex align-items-center justify-content-center position-relative"
+        data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="1000"
+      >
+        <iframe
+          className="h-60 w-100"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15637.060305901385!2d104.9692165675949!3d11.532832822705236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109571964cdbbf1%3A0xa5bb764924a11489!2sBorey%20Lim%20Chheanghak%20(Veal%20Sbov)!5e0!3m2!1sen!2skh!4v1733060951771!5m2!1sen!2skh"
+          // width="900"
+          height="600"
+          style={{ border: '0' }}
+          allowFullScreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+
+
+
+</div>
+
     </div>
   );
 };

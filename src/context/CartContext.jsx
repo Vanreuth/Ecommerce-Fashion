@@ -22,7 +22,7 @@ const CartContextProvider = (props) => {
             : item
         );
       } else {
-        toast.success(`${product.title} added to the cart`, {
+        toast.success(` added to the cart`, {
           position: "top-right",
           autoClose: 2000,
         });
