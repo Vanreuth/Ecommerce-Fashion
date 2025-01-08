@@ -10,7 +10,7 @@ import Order from './pages/Order'
 import Header from './components/Navbar'
 import Footer from './components/Footer'
 import Product from './pages/Product'
-import PlaceOrder from './pages/Placeorder'
+import PlaceOrder from './pages/PlaceOrder'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SearchBar from './components/Serachbar'

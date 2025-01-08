@@ -10,5 +10,6 @@ export default defineConfig({
     outDir: 'dist', // Output directory for production build, should match amplify.yml
     sourcemap: true, // Optional: enable source maps for debugging production code
   },
-  base: '/', // Ensure this matches the root path of your application or adjust if using a subdirectory
+  base: '/',
+
 });

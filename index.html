@@ -1,148 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CozaStore</title>
-    <link rel="icon" type="image/png" href="./src/assets/images/icons/favicon.png"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="./src/assets/vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="./src/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="./src/assets/fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="./src/assets/fonts/linearicons-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="./src/assets/vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="./src/assets/vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="./src/assets/vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="./src/assets/vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="./src/assets/vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="./src/assets/vendor/slick/slick.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="./src/assets/vendor/MagnificPopup/magnific-popup.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="./src/assets/vendor/perfect-scrollbar/perfect-scrollbar.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="./src/assets/css/util.css">
-	<link rel="stylesheet" type="text/css" href="./src/assets/css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-  </head>
-  <body class="animsition">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-    <!--===============================================================================================-->	
-	<script src="./src/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
-  <!--===============================================================================================-->
-    <script src="./src/assets/vendor/animsition/js/animsition.min.js"></script>
-  <!--===============================================================================================-->
-    <script  src="./src/assets/vendor/bootstrap/js/popper.js"></script>
-    <script src="./src/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-  <!--===============================================================================================-->
-    <script  src="./src/assets/vendor/select2/select2.min.js"></script>
-    <script>
-      $(".js-select2").each(function(){
-        $(this).select2({
-          minimumResultsForSearch: 20,
-          dropdownParent: $(this).next('.dropDownSelect2')
-        });
-      })
-    </script>
-  <!--===============================================================================================-->
-    <script   src="./src/assets/vendor/daterangepicker/moment.min.js"></script>
-    <script  src="./src/assets/vendor/daterangepicker/daterangepicker.js"></script>
-  <!--===============================================================================================-->
-    <script  src="./src/assets/vendor/slick/slick.min.js"></script>
-    <script  src="./src/assets/js/slick-custom.js"></script>
-  <!--===============================================================================================-->
-    <script  src="./src/assets/vendor/parallax100/parallax100.js"></script>
-    <script>
-          $('.parallax100').parallax100();
-    </script>
-  <!--===============================================================================================-->
-    <script  src="./src/assets/vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
-    <script>
-      $('.gallery-lb').each(function() { // the containers for all your galleries
-        $(this).magnificPopup({
-              delegate: 'a', // the selector for gallery item
-              type: 'image',
-              gallery: {
-                enabled:true
-              },
-              mainClass: 'mfp-fade'
-          });
-      });
-    </script>
-  <!--===============================================================================================-->
-    <script  src="./src/assets/vendor/isotope/isotope.pkgd.min.js"></script>
-  <!--===============================================================================================-->
-    <!-- <script src="./src/assets/vendor/sweetalert/sweetalert.min.js"></script> -->
-    <script>
-      $('.js-addwish-b2').on('click', function(e){
-        e.preventDefault();
-      });
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CozaStore</title>
+  <link rel="icon" type="image/png" href="https://your-bucket-name.s3.amazonaws.com/path/to/favicon.png" />
   
-      $('.js-addwish-b2').each(function(){
-        var nameProduct = $(this).parent().parent().find('.js-name-b2').html();
-        $(this).on('click', function(){
-          swal(nameProduct, "is added to wishlist !", "success");
-  
-          $(this).addClass('js-addedwish-b2');
-          $(this).off('click');
-        });
-      });
-  
-      $('.js-addwish-detail').each(function(){
-        var nameProduct = $(this).parent().parent().parent().find('.js-name-detail').html();
-  
-        $(this).on('click', function(){
-          swal(nameProduct, "is added to wishlist !", "success");
-  
-          $(this).addClass('js-addedwish-detail');
-          $(this).off('click');
-        });
-      });
-  
-      /*---------------------------------------------*/
-  
-      $('.js-addcart-detail').each(function(){
-        var nameProduct = $(this).parent().parent().parent().parent().find('.js-name-detail').html();
-        $(this).on('click', function(){
-          swal(nameProduct, "is added to cart !", "success");
-        });
-      });
-    
-    </script>
-  <!--===============================================================================================-->
-    <script  src="./src/assets/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script>
-      $('.js-pscroll').each(function(){
-        $(this).css('position','relative');
-        $(this).css('overflow','hidden');
-        var ps = new PerfectScrollbar(this, {
-          wheelSpeed: 1,
-          scrollingThreshold: 1000,
-          wheelPropagation: false,
-        });
-  
-        $(window).on('resize', function(){
-          ps.update();
-        })
-      });
-    </script>
-  <!--===============================================================================================-->
-    <script  src="./src/assets/js/main.js"></script>
-    <!-- jQuery (necessary for Owl Carousel) -->
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./src/assets/css/util.css">
+  <link rel="stylesheet" href="./src/assets/css/main.css">
+</head>
+
+<body class="animsition">
+  <div id="root"></div>
+
+  <!-- React Script -->
+  <script type="module" src="/src/main.jsx"></script>
+
+  <!-- jQuery (necessary for Bootstrap and OwlCarousel) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- Owl Carousel JS -->
- <script  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  </body>
+  <!-- Bootstrap JS and Popper.js (ensure Popper is loaded before Bootstrap) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Select2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+  <script>
+    $(".js-select2").each(function() {
+      $(this).select2({
+        minimumResultsForSearch: 20,
+        dropdownParent: $(this).next('.dropDownSelect2')
+      });
+    });
+  </script>
+
+  <!-- Moment.js and Daterangepicker JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.js"></script>
+
+  <!-- Slick Carousel JS -->
+  <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script type="module" src="./src/assets/js/slick-custom.js"></script>
+
+  <!-- Magnific Popup JS -->
+  <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script type="module">
+    $('.gallery-lb').each(function() {
+      $(this).magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: { enabled: true },
+        mainClass: 'mfp-fade'
+      });
+    });
+  </script>
+
+  <!-- OwlCarousel JS -->
+  <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- PerfectScrollbar JS -->
+  <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.0/perfect-scrollbar.min.js"></script>
+  <script type="module">
+    $('.js-pscroll').each(function() {
+      $(this).css('position', 'relative');
+      $(this).css('overflow', 'hidden');
+      var ps = new PerfectScrollbar(this, {
+        wheelSpeed: 1,
+        scrollingThreshold: 1000,
+        wheelPropagation: false,
+      });
+      $(window).on('resize', function() {
+        ps.update();
+      });
+    });
+  </script>
+
+  <!-- Custom JS -->
+  <script type="module" src="./src/assets/js/main.js"></script>
+
+  <!-- SweetAlert2 JS (Optional, for user notifications) -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script type="module">
+    // Example of adding items to wishlist and cart
+    $('.js-addwish-b2').on('click', function(e) {
+      e.preventDefault();
+      var nameProduct = $(this).parent().parent().find('.js-name-b2').html();
+      Swal.fire(nameProduct, "is added to wishlist!", "success");
+    });
+
+    $('.js-addcart-detail').each(function() {
+      var nameProduct = $(this).parent().parent().parent().parent().find('.js-name-detail').html();
+      $(this).on('click', function() {
+        Swal.fire(nameProduct, "is added to cart!", "success");
+      });
+    });
+  </script>
+</body>
 </html>
