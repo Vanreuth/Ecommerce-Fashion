@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom'
 import ShopContaxtProvider from "./context/ShopContext.jsx";
 import CartContextProvider from './context/CartContext.jsx';
 
+
 createRoot(document.getElementById('root')).render(
   <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
   <ShopContaxtProvider>
