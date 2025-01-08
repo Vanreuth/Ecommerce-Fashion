@@ -3,7 +3,7 @@ import CartTotal from "../components/CartTotal";
 import { ShopContaxt } from "../context/ShopContext";
 import Title from "../components/Title.jsx";
 import PayPalComponent from "../components/Paypal.jsx";
-import PaypalLogo from "../assets/images/Paypal.png";
+import PaypalLogo from "../assets/images/paypal.png";
 import VisaLogo from "../assets/images/visa.png"
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
