@@ -2,6 +2,8 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { ShopContaxt } from "../context/ShopContext";
 import {CartContext} from "../context/CartContext";
+import { FaSearch, FaShoppingCart, FaHeart } from "react-icons/fa";
+import logo from '../assets/images/icons/logo-01.png';
 
 const Header = ({ toggleCart }) => {
   const { setShowSearch, navigate } = useContext(ShopContaxt);
@@ -45,9 +47,8 @@ const Header = ({ toggleCart }) => {
           <nav className="limiter-menu-desktop container">
             {/* Logo desktop */}
             <a href="#" className="logo">
-              <img src="./src/assets/images/icons/logo-01.png" alt="IMG-LOGO" />
+              <img src={logo} alt="IMG-LOGO" />
             </a>
-
             {/* Menu desktop */}
             <div className="menu-desktop">
               <ul className="main-menu">
@@ -79,8 +80,8 @@ const Header = ({ toggleCart }) => {
 
             {/* Icon header */}
             <div className="wrap-icon-header flex-w flex-r-m">
-              <div className="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
-                <i className="zmdi zmdi-search" onClick={handleSearchClick}></i>
+              <div className="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search" onClick={handleSearchClick}>
+                <FaSearch size={20} />
               </div>
               <Link to="/feature">
                 <div
@@ -88,7 +89,7 @@ const Header = ({ toggleCart }) => {
                   data-notify={getCartCount()}
                   onClick={toggleCart}
                 >
-                  <i className="zmdi zmdi-shopping-cart"></i>
+                  <FaShoppingCart size={20} />
                   
                 </div>
               </Link>
@@ -98,7 +99,7 @@ const Header = ({ toggleCart }) => {
                 className="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
                 data-notify="0"
               >
-                <i className="zmdi zmdi-favorite-outline"></i>
+              <FaHeart size={20} />
               </a>
             </div>
           </nav>
