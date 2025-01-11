@@ -2,6 +2,8 @@ import React, { useContext, useState, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CartTotal from '../components/CartTotal';
 import { CartContext } from '../context/CartContext';
+import { FaPlus } from "react-icons/fa6";
+import { FaMinus } from "react-icons/fa6";
 const Feature = () => {
   const { cart, updateQuantity, removeFromCart } = useContext(CartContext);
   const [cartData, setCartData] = useState([]);
@@ -61,7 +63,7 @@ const Feature = () => {
                                 type="button"
                                 onClick={() => updateQuantity(item.id, Math.max(1, item.quantity - 1))}
                               >
-                                <i className="fs-16 zmdi zmdi-minus"></i>
+                                <FaMinus/>
                               </button>
                               <input
                                 className="mtext-104 cl3 txt-center num-product"
@@ -77,7 +79,7 @@ const Feature = () => {
                                 type="button"
                                 onClick={() => updateQuantity(item.id, item.quantity + 1)}
                               >
-                                <i className="fs-16 zmdi zmdi-plus"></i>
+                                <FaPlus/>
                               </button>
                             </div>
                           </td>
