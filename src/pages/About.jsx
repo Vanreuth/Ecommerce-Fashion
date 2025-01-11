@@ -1,10 +1,12 @@
 import React from 'react';
-
+import about from '../assets/images/bg-01.jpg';
+import about1 from "../assets/images/about-01.jpg"
+import about2 from "../assets/images/about-02.jpg"
 const About = () => {
   return (
     <div>
       {/* Background Section */}
-      <section className="bg-img1 txt-center p-lr-15 p-tb-92" style={{ backgroundImage: "url('./src/assets/images/bg-01.jpg')" }}>
+      <section className="bg-img1 txt-center p-lr-15 p-tb-92" style={{ backgroundImage: `url(${about})` }}>
         <h2 className="ltext-105 cl0 txt-center">
           About
         </h2>
@@ -37,7 +39,7 @@ const About = () => {
             <div className="col-11 col-md-5 col-lg-4 m-lr-auto">
               <div className="how-bor1">
                 <div className="hov-img0">
-                  <img src="./src/assets/images/about-01.jpg" alt="IMG" />
+                  <img src={about1} alt="IMG" />
                 </div>
               </div>
             </div>
@@ -69,7 +71,7 @@ const About = () => {
             <div className="order-md-1 col-11 col-md-5 col-lg-4 m-lr-auto p-b-30">
               <div className="how-bor2">
                 <div className="hov-img0">
-                  <img src="./src/assets/images/about-02.jpg" alt="IMG" />
+                  <img src={about2} alt="IMG" />
                 </div>
               </div>
             </div>

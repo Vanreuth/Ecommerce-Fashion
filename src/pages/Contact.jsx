@@ -1,10 +1,11 @@
 import React from 'react';
+import contact from '../assets/images/bg-01.jpg';
 
 const Contact = () => {
   return (
     <div>
       {/* Background Section */}
-      <section className="bg-img1 txt-center p-lr-15 p-tb-92" style={{ backgroundImage: "url('./src/assets/images/bg-01.jpg')" }}>
+      <section className="bg-img1 txt-center p-lr-15 p-tb-92" style={{backgroundImage: `url(${contact})` }}>
         <h2 className="ltext-105 cl0 txt-center">
           Contact
         </h2>

@@ -1,11 +1,16 @@
 import React from 'react';
+import blog from '../assets/images/bg-02.jpg'
+import blog4 from '../assets/images/blog-04.jpg'
+import blog5 from '../assets/images/blog-05.jpg'
+import blog6 from '../assets/images/blog-06.jpg'
+
 
 const Blog = () => {
   return (
     <div>
       <section
         className="bg-img1 txt-center p-lr-15 p-tb-92"
-        style={{ backgroundImage: 'url(./src/assets/images/bg-02.jpg)' }}
+        style={{ backgroundImage: `url(${blog})` }}
       >
         <h2 className="ltext-105 cl0 txt-center">Blog</h2>
       </section>
@@ -19,21 +24,21 @@ const Blog = () => {
                 {/* Blog items */}
                 {[
                   {
-                    image: './src/assets/images/blog-04.jpg',
+                    image: blog4,
                     date: '22 Jan 2018',
                     title: '8 Inspiring Ways to Wear Dresses in the Winter',
                     description: 'Class aptent taciti sociosqu ad litora torquent...',
                     comments: '8 Comments',
                   },
                   {
-                    image: './src/assets/images/blog-05.jpg',
+                    image: blog5,
                     date: '18 Jan 2018',
                     title: 'The Great Big List of Men’s Gifts for the Holidays',
                     description: 'Class aptent taciti sociosqu ad litora torquent...',
                     comments: '8 Comments',
                   },
                   {
-                    image: './src/assets/images/blog-06.jpg',
+                    image: blog6,
                     date: '16 Jan 2018',
                     title: '5 Winter-to-Spring Fashion Trends to Try Now',
                     description: 'Class aptent taciti sociosqu ad litora torquent...',

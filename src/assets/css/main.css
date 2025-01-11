@@ -2165,8 +2165,10 @@ input.num-product::-webkit-inner-spin-button {
 .stext-105 {
   font-family: Poppins-Regular;
   font-size: 14px;
-  line-height: 1.466667;
+  line-height: 2;
   letter-spacing: 1px;
+  font-weight: bolder;
+  
 }
 
 .stext-106 {

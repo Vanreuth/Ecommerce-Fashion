@@ -2,7 +2,9 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { ShopContaxt } from "../context/ShopContext";
 import {CartContext} from "../context/CartContext";
-import { FaSearch, FaShoppingCart, FaHeart } from "react-icons/fa";
+import { IoCartOutline } from "react-icons/io5";
+import { FaRegHeart } from 'react-icons/fa';
+import { IoIosSearch } from "react-icons/io";
 import logo from '../assets/images/icons/logo-01.png';
 
 const Header = ({ toggleCart }) => {
@@ -81,7 +83,7 @@ const Header = ({ toggleCart }) => {
             {/* Icon header */}
             <div className="wrap-icon-header flex-w flex-r-m">
               <div className="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search" onClick={handleSearchClick}>
-                <FaSearch size={20} />
+                <IoIosSearch size={20} />
               </div>
               <Link to="/feature">
                 <div
@@ -89,7 +91,7 @@ const Header = ({ toggleCart }) => {
                   data-notify={getCartCount()}
                   onClick={toggleCart}
                 >
-                  <FaShoppingCart size={20} />
+                  < IoCartOutline size={20} />
                   
                 </div>
               </Link>
@@ -99,7 +101,7 @@ const Header = ({ toggleCart }) => {
                 className="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
                 data-notify="0"
               >
-              <FaHeart size={20} />
+              <FaRegHeart size={20} />
               </a>
             </div>
           </nav>
