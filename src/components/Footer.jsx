@@ -1,6 +1,12 @@
 import React from "react";
+import iconPay01 from '../assets/images/icons/icon-pay-01.png';
+import iconPay02 from '../assets/images/icons/icon-pay-02.png';
+import iconPay03 from '../assets/images/icons/icon-pay-03.png';
+import iconPay04 from '../assets/images/icons/icon-pay-04.png';
+import iconPay05 from '../assets/images/icons/icon-pay-05.png';
 
 const Footer = () => {
+  const icons = [iconPay01, iconPay02, iconPay03, iconPay04, iconPay05];
   return (
     <footer className="bg3 p-t-75 p-b-32">
       <div className="container">
@@ -37,8 +43,8 @@ const Footer = () => {
           <div className="col-sm-6 col-lg-3 p-b-50">
             <h4 className="stext-301 cl0 p-b-30">GET IN TOUCH</h4>
             <p className="stext-107 cl7 size-201">
-              Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018
-              or call us on (+1) 96 716 6879
+              Any questions? Let us know in store at 8th floor, 192 St, Phonom Penh, NY 10018
+              or call us on (+855) 88 33 86 537
             </p>
             <div className="p-t-27">
               {["facebook", "instagram", "pinterest-p"].map((icon, index) => (
@@ -58,7 +64,7 @@ const Footer = () => {
                   className="input1 bg-none plh1 stext-107 cl7"
                   type="text"
                   name="email"
-                  placeholder="email@example.com"
+                  placeholder="hengvanreuth.17@gmail.com"
                 />
                 <div className="focus-input1 trans-04"></div>
               </div>
@@ -73,24 +79,12 @@ const Footer = () => {
 
         <div className="p-t-40">
           <div className="flex-c-m flex-w p-b-18">
-            {[1, 2, 3, 4, 5].map((icon, index) => (
-              <a href="#" className="m-all-1" key={index}>
-                <img src={`./src/assets/images/icons/icon-pay-0${icon}.png`} alt="ICON-PAY" />
-              </a>
-            ))}
+          {icons.map((icon, index) => (
+      <a href="#" className="m-all-1" key={index}>
+        <img src={icon} alt={`ICON-PAY-${index + 1}`} />
+      </a>
+    ))}
           </div>
-
-          <p className="stext-107 cl6 txt-center">
-            Copyright &copy; {new Date().getFullYear()} All rights reserved | Made with{" "}
-            <i className="fa fa-heart-o" aria-hidden="true"></i> by{" "}
-            <a href="https://colorlib.com" target="_blank" rel="noreferrer">
-              Colorlib
-            </a>{" "}
-            &amp; distributed by{" "}
-            <a href="https://themewagon.com" target="_blank" rel="noreferrer">
-              ThemeWagon
-            </a>
-          </p>
         </div>
       </div>
     </footer>
