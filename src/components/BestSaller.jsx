@@ -26,7 +26,7 @@ const Banner = () => {
               backgroundSize: "contain",
               backgroundPosition: "right",
               backgroundRepeat: "no-repeat",
-              height: "300px",
+              height: "25rem",
             }} />
                 <a href={`/product/${womenProducts[0].id}`} className="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3 position-absolute">
                   <div className="block1-txt-child1 flex-col-l">
@@ -55,7 +55,7 @@ const Banner = () => {
               backgroundSize: "contain",
               backgroundPosition: "right",
               backgroundRepeat: "no-repeat",
-              height: "300px",
+              height: "25rem",
             }} />
                 <a href={`/product/${menProducts[0].id}`} className="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3 position-absolute">
                   <div className="block1-txt-child1 flex-col-l">
@@ -81,10 +81,10 @@ const Banner = () => {
             <div className="col-md-6 col-xl-3 p-b-30 m-lr-auto">
               <div className="block1 wrap-pic-w position-relative">
                 <img src={accessoriesProducts[0].image} alt="Accessories Banner"  style={{
-              backgroundSize: "contain",
+              backgroundSize: "cover",
               backgroundPosition: "right",
               backgroundRepeat: "no-repeat",
-              height: "300px",
+              height: "25rem",
             }} />
                 <a href={`/product/${accessoriesProducts[0].id}`} className="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3 position-absolute">
                   <div className="block1-txt-child1 flex-col-l">
@@ -113,7 +113,7 @@ const Banner = () => {
               backgroundSize: "contain",
               backgroundPosition: "right",
               backgroundRepeat: "no-repeat",
-              height: "300px",
+              height: "25rem",
             }} />
                 <a href={`/product/${jeweleryProducts[0].id}`} className="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3 position-absolute">
                   <div className="block1-txt-child1 flex-col-l">

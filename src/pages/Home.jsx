@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../components/Banner";
+import Banner from "../components/BestSaller";
 import Slider from "../components/Slider";
 import Shop from "./Shop";
 

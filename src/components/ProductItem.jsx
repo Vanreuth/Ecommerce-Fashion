@@ -32,7 +32,7 @@ const ProductItem = ({ id, image, name, price }) => {
             color: '#000',
           }}
         >
-          Asura
+          COZA STORE
         </span>
         <Link
           to={`/product/${id}`}

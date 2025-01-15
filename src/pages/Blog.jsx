@@ -3,7 +3,9 @@ import blog from '../assets/images/bg-02.jpg'
 import blog4 from '../assets/images/blog-04.jpg'
 import blog5 from '../assets/images/blog-05.jpg'
 import blog6 from '../assets/images/blog-06.jpg'
-
+import blog7 from '../assets/images/product-min-01.jpg'
+import blog8 from '../assets/images/product-min-02.jpg'
+import blog9 from '../assets/images/product-min-03.jpg'
 
 const Blog = () => {
   return (
@@ -127,9 +129,9 @@ const Blog = () => {
                   <h4 className="mtext-112 cl2 p-b-33">Featured Products</h4>
                   <ul>
                     {[
-                      { img: './src/assets/images/product-min-01.jpg', name: 'White Shirt With Pleat Detail Back', price: '$19.00' },
-                      { img: './src/assets/images/product-min-02.jpg', name: 'Converse All Star Hi Black Canvas', price: '$39.00' },
-                      { img: './src/assets/images/product-min-03.jpg', name: 'Nixon Porter Leather Watch In Tan', price: '$17.00' },
+                      { img: blog7, name: 'White Shirt With Pleat Detail Back', price: '$19.00' },
+                      { img: blog8, name: 'Converse All Star Hi Black Canvas', price: '$39.00' },
+                      { img: blog9, name: 'Nixon Porter Leather Watch In Tan', price: '$17.00' },
                     ].map((product, index) => (
                       <li className="flex-w flex-t p-b-30" key={index}>
                         <a href="#" className="wrao-pic-w size-214 hov-ovelay1 m-r-20">
